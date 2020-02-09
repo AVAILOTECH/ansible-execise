@@ -1,0 +1,7 @@
+---
+- name: Run Common Task
+  hosts: localhost
+  connection: local
+  become: yes
+  roles:
+    - common
