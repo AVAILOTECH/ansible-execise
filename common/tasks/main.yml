@@ -1,5 +1,6 @@
----
-- hosts: localhost
+--- 
+- name: Install Packages
+  hosts: localhost
   connection: local
   become: yes
   tasks:
@@ -7,8 +8,9 @@
     apt:
       name:
       - vim
-      - zip      
+      - zip
     register: out
   - name: Dump Output
     debug:
       var: out
+      
