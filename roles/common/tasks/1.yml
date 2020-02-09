@@ -6,5 +6,8 @@
     apt:
       name:
       - vim
-      - zip
-      
+      - zip      
+    register: out
+  - name: Dump Output
+    debug:
+      var: out
