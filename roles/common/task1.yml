@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install
+    apt:
+      name:
+      - vim
+      - zip
+      
